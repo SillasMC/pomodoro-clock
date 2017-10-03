@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Local Weather</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Monofett|Wallpoet" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+
+	</head>
+	<body>
+		<!-- Div with the full content-->
+		<div class="container-fluid main-div">
+
+			<!-- App row -->
+			<div class="row app-row">
+
+				<p>Pomodoro Clock App  <i class="fa fa-clock-o"></i></p>
+
+				<!-- Config row -->
+				<div class="row config-row">
+					<div class="col-xs-6 col-md-6 col-lg-6 col-side-by-side">
+						<p class="config-left">Break</p>
+					</div>
+					<div class="col-xs-6 col-md-6 col-lg-6 col-side-by-side">
+						<p class="config-right">Session</p>
+					</div>
+				</div>
+
+				<div class="row config-select-row">
+					<div class="col-xs-6 col-md-6 col-lg-6 col-side-by-side-inner">
+						<div class="config-left"><a id="break-down-id"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a> <p id="break-value-id">5</p> <a id="break-up-id"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></div>
+					</div>
+					<div class="col-xs-6 col-md-6 col-lg-6 col-side-by-side-inner">
+						<div class="config-right"><a id="session-down-id"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a> <p id="session-value-id">25</p> <a id="session-up-id"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a></div>
+					</div>
+				</div>
+
+				<!-- Clock circle -->
+				<div class="circle-time">
+					<div class="circle-text">
+						<p id="time-type-id">Session</p>
+					</div>
+					<div class="circle-text">
+						<p id="time-id">25:00</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-12 col-lg-12">
+				<p class="code-author">made by Sillas</p>
+			</div>
+		</div>
+	</body>
+</html>
