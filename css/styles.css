@@ -59,3 +59,10 @@ body{
 	font-family:		'Wallpoet', cursive;
 	font-size:			0.5em;
 }
+a.fill-div {
+	color:				inherit;
+	display:			block;
+	height:				100%;
+	width:				100%;
+	text-decoration:	none;
+}

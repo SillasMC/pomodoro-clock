@@ -31,4 +31,8 @@ $(document).ready(function() {
 
 		$("#session-value-id").text(session_value + 1);
 	});
+
+	$("#play-pause-clock-id").on("click", function () {
+		
+	});
 });
