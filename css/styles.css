@@ -1,9 +1,9 @@
 body{
-	background-color:		   #80ada0;
+	background-color:		   #dda15e;
 }
 .main-div {
 	text-align:	 	center;
-	color:		  	#5f5566;
+	color:		  	#283618;
 }
 .app-row{
 	margin-top:	 	20px;
@@ -51,13 +51,13 @@ body{
 	height:				300px;
 	border-radius:		50%;
 	border-style:		solid;
-	border-color:		#33202a;
+	border-color:		#606c38;
 	border-width:		5px;
+	font-family:		'Wallpoet', cursive;
+	font-size:			0.5em;
 }
 .circle-text{
 	margin-top:			35px;
-	font-family:		'Wallpoet', cursive;
-	font-size:			0.5em;
 }
 a.fill-div {
 	color:				inherit;
@@ -65,4 +65,31 @@ a.fill-div {
 	height:				100%;
 	width:				100%;
 	text-decoration:	none;
+}
+.btn-group .button {
+	color:				white;
+	padding:			10px 15px;
+	text-align:			center;
+	text-decoration:	none;
+	display:			inline-block;
+	font-size:			0.5em;
+	cursor:				pointer;
+	float:				left;
+}
+.btn-group .button-green {
+	background-color:	#4CAF50;
+	border:				1px solid green;
+}
+.btn-group .button-red {
+	background-color:	#ff6534;
+	border:				1px solid red;
+}
+.btn-group .button:not(:last-child) {
+	border-right:	none; /* Prevent double borders */
+}
+.btn-group .button-green:hover {
+	background-color:	#3e8e41;
+}
+.btn-group .button-red:hover {
+	background-color:	#d1491f;
 }
