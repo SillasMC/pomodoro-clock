@@ -100,13 +100,23 @@ $(document).ready(function() {
 
 		// Change turn
 		if (timeArray[0] == 0 && timeArray[1] == 0) {
+			let oldType = sessionStatus ? 'Session' : 'Break';
 			let sessionKind = sessionStatus ? 'Break' : 'Session';
 			sessionStatus = !sessionStatus;
 
 			$("#time-type-id").text(sessionKind);
 			$("#time-id").text($("#" + sessionKind.toLowerCase() + "-value-id").text() + ':00');
-			
-			//TODO Insert notification
+
+			var options = {
+				body:		oldType + ' time has expired!',
+				icon:		'images/icon-48.png',
+				vibrate:	[100, 50, 100],
+				data:		{
+					dateOfArrival:	Date.now(),
+					primaryKey:		1
+				}
+			};
+			displayNotification('Pomodoro Clock', options);
 		}
 		else {
 			let formattedNumber = ("0" + timeArray[1]).slice(-2);
@@ -114,5 +124,13 @@ $(document).ready(function() {
 			$("#time-id").text(timeArray[0] + ':' + formattedNumber);
 		}
 
+	}
+
+	function displayNotification (title, options) {
+		if (Notification.permission == 'granted') {
+			navigator.serviceWorker.getRegistration().then(function(reg) {
+				reg.showNotification(title, options);
+			});
+		}
 	}
 });

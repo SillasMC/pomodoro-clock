@@ -1,9 +1,10 @@
-let cacheName			= "localWeatherPWA-v2";
+let cacheName			= "localWeatherPWA-v3";
 let appShellCache		= [
 	"/",
 	"/index.html",
 	"/js/script.js",
 	"/js/register.js",
+	"/js/permissions.js",
 	"/css/styles.css"
 ];
 
