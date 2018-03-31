@@ -1,4 +1,4 @@
-let cacheName			= "localWeatherPWA-v1";
+let cacheName			= "localWeatherPWA-v2";
 let appShellCache		= [
 	"/",
 	"/index.html",

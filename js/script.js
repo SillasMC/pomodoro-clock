@@ -31,7 +31,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// Decrease break time
+	// Decrease session time
 	$("#session-down-id").on("click", function () {
 		let session_value = Number($("#session-value-id").text());
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		}
 	});
 
-	// Increase break time
+	// Increase session time
 	$("#session-up-id").on("click", function () {
 		let session_value = Number($("#session-value-id").text());
 
@@ -105,6 +105,8 @@ $(document).ready(function() {
 
 			$("#time-type-id").text(sessionKind);
 			$("#time-id").text($("#" + sessionKind.toLowerCase() + "-value-id").text() + ':00');
+			
+			//TODO Insert notification
 		}
 		else {
 			let formattedNumber = ("0" + timeArray[1]).slice(-2);
